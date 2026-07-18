@@ -1,10 +1,8 @@
-TARGET := iphone:clang:latest:6.0
+TARGET := iphone:clang:latest:14.0
+ARCHS := arm64 arm64e
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = DuolingoX
+TWEAK_NAME = SolidGlass27
 
-DuolingoX_FILES = Tweak.x
-DuolingoX_CFLAGS = -fobjc-arc
-
-include $(THEOS_MAKE_PATH)/tweak.mk
+include $(THEOS)/makefiles/tweak.mk
